@@ -1,17 +1,30 @@
-local currentPlaceId = game.PlaceId
+local gameid = {
+    [8737899170] = "1",
+    [15502339080] = "1",
 
-if currentPlaceId == 8737899170 then
-    -- loadstring(game:HttpGet("https://raw.githubusercontent.com/Ankaikazc/Loader/refs/heads/main/PetSimulator99"))()
-    
-elseif currentPlaceId == 2753915549 then
-    -- loadstring(game:HttpGet("https://raw.githubusercontent.com/Ankaikazc/Loader/refs/heads/main/BloxFruit"))()
-    
-elseif currentPlaceId == 142823291 then
-    -- loadstring(game:HttpGet("https://raw.githubusercontent.com/Ankaikazc/Loader/refs/heads/main/MurderMystery2"))()
-    
-elseif currentPlaceId == 18901165922 then
-    -- loadstring(game:HttpGet("https://raw.githubusercontent.com/Ankaikazc/Loader/refs/heads/main/PetsGo"))()
-    
-elseif currentPlaceId == 8737602449 then
-    -- loadstring(game:HttpGet("https://raw.githubusercontent.com/Ankaikazc/Loader/refs/heads/main/PlsDonate"))()
+    [18901165922] = "2",
+    [19006211286] = "2",
+
+    [142823291] = "3",
+
+    [2753915549 ] = "4",
+
+    [8737602449 ] = "5"
+
+}
+
+if gameid[game.PlaceId] then
+    script_use = gameid[game.PlaceId]
+end
+
+if script_use == "1" then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Ankaikazc/Loader/refs/heads/main/PetSimulator99"))()
+elseif script_use == "2" then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Ankaikazc/Loader/refs/heads/main/PetsGo"))()
+elseif script_use == "3" then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Ankaikazc/Loader/refs/heads/main/MurderMystery2"))()
+elseif script_use == "4" then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Ankaikazc/Loader/refs/heads/main/BloxFruit"))()
+elseif script_use == "5" then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Ankaikazc/Loader/refs/heads/main/PlsDonate"))()
 end
