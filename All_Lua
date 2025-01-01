@@ -1,22 +1,17 @@
-local gameScripts = {
-    [8737899170] = function() --PetSimulator99
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Ankaikazc/Loader/refs/heads/main/PetSimulator99"))()
-    end,
-    [2753915549] = function() --BloxFruit
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Ankaikazc/Loader/refs/heads/main/BloxFruit"))()
-    end,
-    [142823291] = function() --MurderMystery2
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Ankaikazc/Loader/refs/heads/main/MurderMystery2"))()
-    end,
-    [18901165922] = function() --PetsGo
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Ankaikazc/Loader/refs/heads/main/PetsGo"))()
-    end,
-    [8737602449] = function() --PlsDonate
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Ankaikazc/Loader/refs/heads/main/PlsDonate"))()
-    end
-}
+local currentPlaceId = game.PlaceId
 
-local currentGameId = game.GameId
-if gameScripts[currentGameId] then
-    gameScripts[currentGameId]()
+if currentPlaceId == 8737899170 then
+    -- loadstring(game:HttpGet("https://raw.githubusercontent.com/Ankaikazc/Loader/refs/heads/main/PetSimulator99"))()
+    
+elseif currentPlaceId == 2753915549 then
+    -- loadstring(game:HttpGet("https://raw.githubusercontent.com/Ankaikazc/Loader/refs/heads/main/BloxFruit"))()
+    
+elseif currentPlaceId == 142823291 then
+    -- loadstring(game:HttpGet("https://raw.githubusercontent.com/Ankaikazc/Loader/refs/heads/main/MurderMystery2"))()
+    
+elseif currentPlaceId == 18901165922 then
+    -- loadstring(game:HttpGet("https://raw.githubusercontent.com/Ankaikazc/Loader/refs/heads/main/PetsGo"))()
+    
+elseif currentPlaceId == 8737602449 then
+    -- loadstring(game:HttpGet("https://raw.githubusercontent.com/Ankaikazc/Loader/refs/heads/main/PlsDonate"))()
 end
